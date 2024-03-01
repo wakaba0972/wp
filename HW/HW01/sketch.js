@@ -1,15 +1,14 @@
 const PARRENT_ID = "bg"
 const WIDTH = window.innerWidth
 const HEIGHT = window.innerHeight
-const WIDTH_ADJ = 0
-const HEIGHT_ADJ = 0
-const CAM_X_ADJ = 0
-const CAM_Y_ADJ = 0
-const CAM_Z_ADJ = 0
-const SPEED = 0.01
-const SCL = 50
-const MIN_HEIGHT = -200
-const MAX_HEIGHT = 200
+const WIDTH_ADJ = 0 //mesh寬度調整
+const HEIGHT_ADJ = 0 //mesh高度調整
+const CAM_Y_ADJ = 0 //cam拉遠 (前後方向)
+const CAM_Z_ADJ = 0 //cam拉遠 (上下方向)
+const SPEED = 0.01 //飛行速度
+const SCL = 50 //mesh網格一格長寬
+const MIN_HEIGHT = -200 //亂數映射最小值
+const MAX_HEIGHT = 200 //亂數映射最大值
 
 var w = WIDTH + WIDTH_ADJ;
 var h = HEIGHT + HEIGHT_ADJ;
@@ -48,7 +47,7 @@ function draw() {
     flying -= SPEED;
   
     rotateX(PI/3);
-    translate(-(w + CAM_X_ADJ) / 2, -(h + CAM_Y_ADJ) / 2, -CAM_Z_ADJ);
+    translate(-w / 2, -(h + CAM_Y_ADJ) / 2, -CAM_Z_ADJ);
   
     for (let y = 0; y < rows-1; y++) {
       beginShape(TRIANGLE_STRIP);
