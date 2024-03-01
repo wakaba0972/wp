@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吳秉昭的自我介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>吳秉昭的自我介紹</h1>
+    </header>
+
+    <section>
+        <p>大家好，我是吳秉昭。很高興有機會在這裡向大家介紹一下自己。我出生於一個充滿活力的城市，自小就對各種事物充滿好奇心與熱情。</p>
+
+        <p>我的求學歷程一直都是我成長過程中的一大亮點。我在學業上努力進取，不僅學習了豐富的知識，也培養了解決問題的能力。在學校，我經常參與各種活動，擔任過學生會幹部，這些經驗讓我學到了領導能力和協作精神。</p>
+
+        <p>除了學業，我對於科技和創新也抱有濃厚的興趣。我喜歡探索新的科技趨勢，並且在實踐中學習。這使我對未來的科技發展充滿信心，並希望能夠在這個領域做出一些貢獻。</p>
+    </section>
+
+</body>
+</html>
