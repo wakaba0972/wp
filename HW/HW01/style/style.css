@@ -22,8 +22,14 @@ a {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+    background-color: #f1e9e9;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+#kirito {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
