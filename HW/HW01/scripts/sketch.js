@@ -14,8 +14,8 @@ var terrain;
 function setup() {
     createCanvas(WIDTH, HEIGHT, WEBGL).parent(PARRENTID);
 
-    cols = Math.ceil(WIDTH / scl);
-    rows = Math.ceil(HEIGHT / scl);
+    cols = Math.ceil(WIDTH / SCL);
+    rows = Math.ceil(HEIGHT / SCL);
 
     terrain = new Array(cols);
     for(let i = 0; i < cols; i++) terrain[i] = new Array(rows);
@@ -44,8 +44,8 @@ function draw() {
     for (let y = 0; y < rows-1; y++) {
       beginShape(TRIANGLE_STRIP);
       for (let x = 0; x < cols; x++) {
-        vertex(x*scl, y*scl, terrain[x][y]);
-        vertex(x*scl, (y+1)*scl, terrain[x][y+1]);
+        vertex(x*SCL, y*SCL, terrain[x][y]);
+        vertex(x*SCL, (y+1)*SCL, terrain[x][y+1]);
       }
       endShape();
     }
