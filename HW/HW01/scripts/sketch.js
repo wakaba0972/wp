@@ -2,15 +2,17 @@ const PARRENTID = "bg"
 const WIDTH = window.innerWidth
 const HEIGHT = window.innerHeight
 const SPEED = 0.01
+const SCL = 50
 
-var scl = 50;
 var cols, rows;
 var yoff, xoff;
 var flying = 0;
 var terrain;
 
+// 計算mesh的cols和rows
+// terrain用來儲存每個點的高度
 function setup() {
-    createCanvas(WIDTH, HEIGHT, WEBGL).parent(PARRENTID); // 設置父節點 id
+    createCanvas(WIDTH, HEIGHT, WEBGL).parent(PARRENTID);
 
     cols = Math.ceil(WIDTH / scl);
     rows = Math.ceil(HEIGHT / scl);
@@ -19,6 +21,7 @@ function setup() {
     for(let i = 0; i < cols; i++) terrain[i] = new Array(rows);
 }
 
+// 用perlin noise計算每個點的高度，並繪出
 function draw() {
     background(0);
     stroke(255);

@@ -1,10 +1,15 @@
+/* 讓canvas置於背景，調整透明度*/
 canvas{
     position:absolute;
     opacity: 0.1;
 }
+
+/*讓body不會有空隙*/
 body{
     margin: 0 ;
 }
+
+/*挑整字體大小和顏色*/
 h1 {
     color: #333;
     font-size: 30px;
@@ -14,8 +19,13 @@ p {
 }
 
 a {
-    line-height: 1.6;
+    line-height: 1.6; 
 }
+
+/* 
+    上半部為ChatGPT產生
+    下半部為原創，使這個格子置中
+*/
 #mainSection {
     font-family: Arial, sans-serif;
     border: 1px solid #4c4444;
@@ -28,6 +38,8 @@ a {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/*圖片置中*/
 #kirito {
     position: relative;
     left: 50%;
