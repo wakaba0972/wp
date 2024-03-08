@@ -8,5 +8,7 @@
 教師 | [陳鍾誠](https://www.nqu.edu.tw/educsie/index.php?act=blog&code=list&ids=4)
 學校科系 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
 課程教材 | https://github.com/ccc112b/html2denojs <br/> https://www.w3schools.com/
-作業網址 | HW01: https://wakaba0972.github.io/wp/HW/HW01/Self_Introduction.html
-          Hw02
+HW01: https://wakaba0972.github.io/wp/HW/HW01/Self_Introduction.html
+HW02: https://wakaba0972.github.io/wp/HW/HW02/withoutCSS/index.html
+      https://wakaba0972.github.io/wp/HW/HW02/withCSS/index.html                        
+                    
