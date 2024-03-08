@@ -1,3 +1,4 @@
+//建立映射，方便把表單內容印出
 let map0 = new Map([
     [0, 'name'],
     [1, 'sex'],
@@ -13,9 +14,8 @@ let map0 = new Map([
     [11, 'intro'],
 ])
 
+//隱藏表單，並讓顯示結果的div可見，再把表單內容一一填入
 function submitt(){
-    
-
     let myform =  document.getElementById('myForm')
     let contents = document.getElementsByClassName('content')
     let formSection = document.getElementById('formSection')
