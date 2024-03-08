@@ -1,0 +1,61 @@
+#mainSection {
+    font-family: Consolas;
+    border: 1px solid #4c4444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    background-color: rgba(58, 58, 58, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#button {
+    padding: 5pt;
+    margin-top: 10pt;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.left{
+    color: white;
+    font-size:  larger;
+    display: inline;
+    margin: 15pt;
+}
+
+.right {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid #4c4444;
+}
+
+.content {
+    font-size:  small;
+    color: white;
+    display: inline;
+    background-color: black;
+}
+
+.inputSection {
+    margin: 15pt;
+}
+
+input {
+    font-family: Consolas;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    color: white;
+}
+
+body{
+    margin: 0 ;
+}

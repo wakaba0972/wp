@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <script src="./submit.js"></script>
+        <script src="../../../libraries/p5.min.js"></script>
+        <script src="./sketch.js"></script>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="bg" ></div>
+        <div id="mainSection">
+            <div id="afterSubmit"  style="display:none">
+                <div class="inputSection">
+                    <p class="left">Name:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Sex:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">E-mail:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Account:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Password:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">BirthDay:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Favorite-Color:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Blood-Type:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Phone-Number:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Subscribe:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Attachment:</p>
+                    <p class="content"></p>
+                </div>
+                <div class="inputSection">
+                    <p class="left">Self Intro:</p>
+                    <textarea disabled class="content" rows="7", cols="40"></textarea>
+                </div>
+            </div>
+
+
+            <div id="formSection">
+                <form id="myForm">
+                    <div class="inputSection">
+                        <p class="left">Name</p>
+                        <input class="right" name="name">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Sex</p>
+                        <input type="radio" value="Male" class="right" name="sex"><label>Male</label>
+                        <input type="radio" value="Female" class="right" name="sex"><label>Female</label>
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">E-mail</p>
+                        <input type="email" class="right" name="email">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Account</p>
+                        <input class="right" name="account">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Password</p>
+                        <input type="password" class="right" name="password">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">BirthDay</p>
+                        <input type="date" class="right" name="birthday" value="2017-06-01">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Favorite-Color</p>
+                        <input type="color" class="right" name="color">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Blood-Type</p>
+                        <select class="right" name="blood">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="O">O</option>
+                            <option value="AB">AB</option>
+                        </select>
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Phone-Number</p>
+                        <input type="tel" class="right" name="phone">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Subscribe</p>
+                        <input type="checkbox" class="right" name="sub">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Attachment</p>
+                        <input type="file" class="right" name="ath">
+                    </div>
+                    <div class="inputSection">
+                        <p class="left">Self Intro</p>
+                        <textarea class="right" rows="7", cols="40" name="intro" form="myForm"></textarea>
+                    </div>
+                </form>
+                <input id="button" type="submit" value="Submit" onclick="submitt()">
+            </div>
+        </div>
+    </body>
+</html>
