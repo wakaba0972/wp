@@ -2,7 +2,7 @@
 
 // require array as argument
 function vectorAdd(a, b){
-    c = []
+    var c = []
 
     for(let i=0; i<Math.max(a.length, b.length); i++){
         if(!a[i]) a[i] = 0;

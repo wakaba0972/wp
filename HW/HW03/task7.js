@@ -6,7 +6,7 @@ function matrixMul(a, b) {
     var row = a.length;
     var col = b[0].length;
 
-    res = new Array(a.length);
+    var res = new Array(a.length);
 
     for(let i=0; i<row; i++){
         res[i] = [];
