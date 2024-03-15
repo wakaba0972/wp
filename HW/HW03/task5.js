@@ -1,6 +1,6 @@
 // 寫一個函數做向量相加 vectorAdd(a,b)
 
-//required array as parameter
+// required array as argument
 function vectorAdd(a, b){
     c = []
 

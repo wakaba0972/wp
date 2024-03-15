@@ -1,6 +1,6 @@
 // 寫一個函數做矩陣相加 matrixAdd(a,b)
 
-//required array as parameter
+// required array as argument
 function vectorAdd(a, b){
     var c = [];
     for(let i=0; i<a.length; i++) c[i] = a[i] + b[i];
@@ -8,7 +8,7 @@ function vectorAdd(a, b){
     return c;
 }
 
-//required array as parameter
+// required array as argument
 function matrixAdd(a, b){
     var res = Array.from(a);
 

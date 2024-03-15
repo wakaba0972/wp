@@ -1,6 +1,6 @@
 // 寫一個函數做矩陣相乘 matrixMul(a,b)
 
-////required array as parameter
+// required array as argument
 function matrixMul(a, b) {
     var nums = a[0].length;
     var row = a.length;
