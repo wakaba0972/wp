@@ -12,7 +12,7 @@ function Prime(n){
         }
     }
 
-    for(let i=2; i<=n; i++) if(table[i]) primes.push(i);
+    for(let i=2; i<n; i++) if(table[i]) primes.push(i);
 
     return primes;
 }
