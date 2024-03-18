@@ -1,7 +1,7 @@
 //建立映射，方便把表單內容印出
 let map0 = new Map([
     [0, 'name'],
-    [1, 'sex'],
+    [1, 'Gender'],
     [2, 'email'],
     [3, 'account'],
     [4, 'password'],
