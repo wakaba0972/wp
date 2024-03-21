@@ -8,7 +8,7 @@ function Prime(n){
     table[0] = table[1] = false;
     for(let i=2; i<=Math.sqrt(n); i++) {
         if(table[i]){
-            for(let j=i * 2; j<=n; j+=i) table[j] = false;
+            for(let j=i<<1; j<=n; j+=i) table[j] = false;
         }
     }
 
