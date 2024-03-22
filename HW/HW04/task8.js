@@ -14,7 +14,7 @@ function df(f, p, k){
     return (f(p1[k] + h) - f(p)) / h
 }
 
-//計算偏微分, 放進ps裡回傳
+//對每個維度微分, 放進ps裡回傳
 function grad(f, p){
     let ps = Array.from(p);
     for(let i = 0; i<p.length; i++){
