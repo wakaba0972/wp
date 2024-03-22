@@ -11,6 +11,7 @@ function weekday(str){
         ["sunday", 0],
     ])
 
+    //全轉小寫，方便查詢
     return mp.get(str.toLowerCase());
 }
 
