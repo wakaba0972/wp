@@ -9,3 +9,5 @@ function countChar(str){
 
     return mp;
 }
+
+console.log(countChar("aabccadeaac"))

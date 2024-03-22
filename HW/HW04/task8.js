@@ -6,12 +6,12 @@ function f(p){
     return 3 * p[0] ** 2 + p[1];
 }
 
-//p[0]為x p[1]為y 以此類推
-//若k=0 則是對x微分
+//p[0]為x p[1]為y
+//若k=0 則是對x微分 以此類推
 function df(f, p, k){
     let p1 = Array.from(p);
-    p1[k] += h;
-    return (f(p1) - f(p)) / h
+
+    return (f(p1[k] + h) - f(p)) / h
 }
 
 //計算偏微分, 放進ps裡回傳
