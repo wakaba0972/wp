@@ -6,7 +6,7 @@ function f(p){
     return 3 * p[0] ** 2 + 5 * p[1] * p[2];
 }
 
-//p[0]為x p[1]為y
+//p[0]為x p[1]為y....
 //若dim=0 則是對x微分 以此類推
 //copy p到p1, p1[dim]+=h才不會動到p的值
 function df(f, p, dim){
