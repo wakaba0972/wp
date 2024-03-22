@@ -18,8 +18,8 @@ function df(f, p, k){
 //對每個維度微分, 放進ps裡回傳
 function grad(f, p){
     let ps = Array.from(p);
-    for(let i = 0; i<p.length; i++){
-        ps[i] = df(f, p, i)
+    for(let dim = 0; dim<p.length; dim++){
+        ps[i] = df(f, p, dim)
     }
 
     return ps;
