@@ -10,7 +10,7 @@ function vectorAdd(a, b){
 
 // require array as argument
 function matrixAdd(a, b){
-    var res = Array.from(a);
+    var res = [];
 
     for(let i=0; i<a.length; i++) res[i] = vectorAdd(a[i], b[i]);
 
