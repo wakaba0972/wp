@@ -8,7 +8,7 @@ function f(p){
 
 //p[0]為x p[1]為y
 //若k=0 則是對x微分 以此類推
-//copy p到p1, p1[k]+h才不會動到p的值
+//copy p到p1, p1[k]+=h才不會動到p的值
 function df(f, p, k){
     let p1 = Array.from(p);
     p1[k] += h;
