@@ -7,11 +7,11 @@ function f(p){
 }
 
 //p[0]為x p[1]為y
-//若k=0 則是對x微分 以此類推
-//copy p到p1, p1[k]+=h才不會動到p的值
-function df(f, p, k){
+//若dim=0 則是對x微分 以此類推
+//copy p到p1, p1[dim]+=h才不會動到p的值
+function df(f, p, dim){
     let p1 = Array.from(p);
-    p1[k] += h;
+    p1[dim] += h;
     return (f(p1) - f(p)) / h
 }
 
@@ -19,7 +19,7 @@ function df(f, p, k){
 function grad(f, p){
     let ps = Array.from(p);
     for(let dim = 0; dim<p.length; dim++){
-        ps[i] = df(f, p, dim)
+        ps[dim] = df(f, p, dim)
     }
 
     return ps;
