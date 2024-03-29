@@ -7,7 +7,7 @@ let width = 100;
 let height = 100;
 let btn = document.getElementById('btn');
 
-// ease function 讓動畫有動態感，取x=0~1來使用
+// Easing Function 讓動畫有動態感，取x=0~1來使用
 function ease(x) {
     return 1 - Math.sqrt(1 - Math.pow(x, 2));
 }
