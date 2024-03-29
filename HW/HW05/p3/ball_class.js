@@ -1,7 +1,7 @@
 // 邊界
 const LEFT = 0
-const RIGHT = window.innerWidth - 50
 const TOP = 0
+const RIGHT = window.innerWidth - 50
 const BUTTOM = window.innerHeight - 50
 
 // 按鈕半徑
@@ -28,11 +28,11 @@ function isCollision(b1, b2){
 
 // 二維彈性碰撞
 function collision(b1, b2){
-	let nb1vx = (b1.vx * (b1.m - b2.m) + 2 * b2.m * b2.vx) / (b1.m +b2.m);
-	let nb1vy = (b1.vy * (b1.m - b2.m) + 2 * b2.m * b2.vy) / (b1.m +b2.m);
+	let nb1vx = (b1.vx * (b1.m - b2.m) + 2 * b2.m * b2.vx) / (b1.m + b2.m);
+	let nb1vy = (b1.vy * (b1.m - b2.m) + 2 * b2.m * b2.vy) / (b1.m + b2.m);
 
-	let nb2vx = (b2.vx * (b2.m - b1.m) + 2 * b1.m * b1.vx) / (b2.m +b1.m);
-	let nb2vy = (b2.vy * (b2.m - b1.m) + 2 * b1.m * b1.vy) / (b2.m +b1.m);
+	let nb2vx = (b2.vx * (b2.m - b1.m) + 2 * b1.m * b1.vx) / (b2.m + b1.m);
+	let nb2vy = (b2.vy * (b2.m - b1.m) + 2 * b1.m * b1.vy) / (b2.m + b1.m);
 
 	b1.vx = nb1vx;
 	b1.vy = nb1vy;
@@ -114,9 +114,8 @@ class Reset_Button_Ball extends Button_Ball {
     constructor(idx) {
         super(idx)
 
-        this.node.style.backgroundColor = "gray"
-
         this.node.innerText = "Click ME"
+        this.node.style.backgroundColor = "gray"
         this.node.onclick = function() {reset(true)}
     }
 }

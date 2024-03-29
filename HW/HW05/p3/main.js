@@ -68,18 +68,20 @@ function reset(is_failed){
 
 // 每禎執行碰撞檢測，並更新button位置
 function update(){
-    for(let i=0; i<NUM+RNUM; i++){
-        for(let j=0; j<NUM+RNUM; j++){
-            if(isCollision(balls[i], balls[j])) collision(balls[i], balls[j]);
-        }
-    }
-    for(b of balls) b.move()
-
+    
     // 如果遊戲結束 就跳離requestAnimationFrame
     if(!rest) {
         reset(false);
         return
     }
+
+    for(let i=0; i<NUM+RNUM; i++){
+        for(let j=i+1; j<NUM+RNUM; j++){
+            if(isCollision(balls[i], balls[j])) collision(balls[i], balls[j]);
+        }
+    }
+
+    for(b of balls) b.move()
 
     requestAnimationFrame(update)
 }
