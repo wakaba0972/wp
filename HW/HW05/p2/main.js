@@ -1,7 +1,10 @@
+
+// 也是ease function, 取值x=0~1
 function ease(x) {
     return x * x * x * x * x;
 }
 
+// 按鈕移動
 function move(){
     t += 0.01
 
@@ -15,6 +18,7 @@ function move(){
     let ori_v = Number(btn.style.left.slice(0, -2));
     let new_v = 50 * ease(t);
 
+    // 碰到邊界就改變方向
     if(ori_v + a * new_v > window.innerWidth - width && !dir || ori_v + a * new_v < 0 && dir) {
         dir = !dir;
         a *= -1

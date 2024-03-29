@@ -1,3 +1,5 @@
+
+// 用來計算遊戲進行時間的計時器
 class Timer{
     constructor(){
         this.startTime;
