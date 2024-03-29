@@ -116,6 +116,9 @@ class Reset_Button_Ball extends Button_Ball {
 
         this.node.innerText = "Click ME"
         this.node.style.backgroundColor = "gray"
-        this.node.onclick = function() {reset(true)}
+        this.node.onclick = function() {
+            killer_idx = idx
+            reset(true)
+        }
     }
 }

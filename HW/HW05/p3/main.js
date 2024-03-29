@@ -10,6 +10,7 @@ let title = document.getElementById("title")
 let countdown = document.getElementById("countdown")
 
 let level = 0;
+let killer_idx;
 
 //宣告計時器
 let timer1 = new Timer()
@@ -37,7 +38,12 @@ function reset(is_failed){
     timer1.end()
 
     if(is_failed) {
-        title.innerText = "你輸了!"
+        title.innerText = "你輸了!\n" + 
+                          "你被 balls[" + killer_idx + "] 所擊殺:\n\n" +
+                          "兇手訊息:\n\n" + 
+                          `半徑 =  ${balls[killer_idx].r}\n` +
+                          `質量 =  ${balls[killer_idx].m}\n` +
+                          `速度 = ${Math.sqrt(balls[killer_idx].vx ** 2 + balls[killer_idx].vy ** 2)}\n`
         level = 0;
     }
     else {
@@ -59,7 +65,7 @@ function reset(is_failed){
             return
         }
         
-        countdown.innerText = t + "秒後開始遊戲"
+        countdown.innerText ="\n" + t + "秒後開始遊戲"
         t--
 
     }, 1000)
@@ -68,7 +74,7 @@ function reset(is_failed){
 
 // 每禎執行碰撞檢測，並更新button位置
 function update(){
-    
+
     // 如果遊戲結束 就跳離requestAnimationFrame
     if(!rest) {
         reset(false);
