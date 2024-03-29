@@ -27,7 +27,7 @@ function isCollision(b1, b2){
 }
 
 // 二維彈性碰撞
-function bounce(b1, b2){
+function collision(b1, b2){
 	let nb1vx = (b1.vx * (b1.m - b2.m) + 2 * b2.m * b2.vx) / (b1.m +b2.m);
 	let nb1vy = (b1.vy * (b1.m - b2.m) + 2 * b2.m * b2.vy) / (b1.m +b2.m);
 

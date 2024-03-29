@@ -70,7 +70,7 @@ function reset(is_failed){
 function update(){
     for(let i=0; i<NUM+RNUM; i++){
         for(let j=0; j<NUM+RNUM; j++){
-            if(isCollision(balls[i], balls[j])) bounce(balls[i], balls[j]);
+            if(isCollision(balls[i], balls[j])) collision(balls[i], balls[j]);
         }
     }
     for(b of balls) b.move()
