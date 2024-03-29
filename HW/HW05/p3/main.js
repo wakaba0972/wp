@@ -39,7 +39,7 @@ function reset(is_failed){
 
     if(is_failed) {
         title.innerText = "你輸了!\n" + 
-                          "你被 balls[" + (killer_idx + NUM) + "] 所擊殺:\n\n" +
+                          "你被 balls[" + (killer_idx) + "] 所擊殺:\n\n" +
                           "兇手訊息:\n\n" + 
                           `半徑 =  ${balls[killer_idx].r}\n` +
                           `質量 =  ${balls[killer_idx].m}\n` +
