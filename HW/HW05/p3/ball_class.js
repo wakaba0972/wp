@@ -9,8 +9,8 @@ const MIN_RADIUS = 60
 const MAX_RADIUS = 70
 
 // 按鈕速度
-var MIN_VELOCITY = 2
-var MAX_VELOCITY = 5
+const MIN_VELOCITY = 2
+const MAX_VELOCITY = 5
 
 //
 function rand(min,max){
