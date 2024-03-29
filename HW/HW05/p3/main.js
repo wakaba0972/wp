@@ -1,6 +1,6 @@
 // Don't Click ME按鈕數量和Click ME按鈕數量
 const NUM = 8
-const RNUM = 5
+const RNUM = 6
 
 // balls儲存button_ball, rest紀錄未被click的按鈕數量
 let balls;
@@ -14,7 +14,7 @@ let timer1 = new Timer()
 
 function init(){
     rest = NUM;
-    title.innerText = "點擊所有Don't Click ME按鈕!"
+    title.innerText = "點亮所有Don't Click ME按鈕!"
     countdown.innerText = ""
 
     // 開始計時

@@ -10,7 +10,7 @@ const MAX_RADIUS = 70
 
 // 按鈕速度
 const MIN_VELOCITY = 2
-const MAX_VELOCITY = 7
+const MAX_VELOCITY = 6
 
 //
 function rand(min,max){
@@ -94,12 +94,18 @@ class Normal_Button_Ball extends Button_Ball {
 
     // 按鈕被點擊後的事件
     activate() {
-        if(this.clicked) return
-
-        rest--;
-        this.clicked = true
-        this.node.innerText = "Clicked"
-        this.node.style.backgroundColor = "yellow"
+        if(this.clicked) {
+            rest++;
+            this.clicked = false
+            this.node.innerText = "Don't Click ME"
+            this.node.style.backgroundColor = ""
+        }
+        else{
+            rest--;
+            this.clicked = true
+            this.node.innerText = "Clicked"
+            this.node.style.backgroundColor = "yellow"
+        }
     }
 }
 

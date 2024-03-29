@@ -6,3 +6,10 @@ button {
 h1 {
     text-align: center;
 }
+
+/* 複製自W3School 禁止選取文字*/
+body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
