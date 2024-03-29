@@ -1,5 +1,5 @@
 
-// 也是Easing Functio, 取值x=0~1
+// 也是Easing Function, 取值x=0~1
 function ease(x) {
     return x * x * x * x * x;
 }
