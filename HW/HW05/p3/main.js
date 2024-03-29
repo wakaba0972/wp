@@ -9,12 +9,14 @@ let rest;
 let title = document.getElementById("title")
 let countdown = document.getElementById("countdown")
 
+let level = 0;
+
 //宣告計時器
 let timer1 = new Timer()
 
 function init(){
     rest = NUM;
-    title.innerText = "點亮所有Don't Click ME按鈕!"
+    title.innerText = "點亮所有Don't Click ME按鈕!\nLevel " + (level + 1)
     countdown.innerText = ""
 
     // 開始計時
@@ -22,8 +24,8 @@ function init(){
 
     // 宣告眾button們
     balls = new Array()
-    for(let i=0; i<NUM; i++) balls.push(new Normal_Button_Ball(i))
-    for(let i=0; i<RNUM; i++) balls.push(new Reset_Button_Ball(i))
+    for(let i=0; i<NUM; i++) balls.push(new Normal_Button_Ball(i, level))
+    for(let i=0; i<RNUM; i++) balls.push(new Reset_Button_Ball(i, level))
 
     // 進入requestAnimationFrame 每禎執行update()
     requestAnimationFrame(update)
@@ -34,8 +36,14 @@ function reset(is_failed){
     // 中止計時
     timer1.end()
 
-    if(is_failed) title.innerText = "你輸了!"
-    else title.innerText = "你贏了! 你花了" + timer1.output() + "秒"
+    if(is_failed) {
+        title.innerText = "你輸了!"
+        level = 0;
+    }
+    else {
+        title.innerText = "你贏了! 你花了" + timer1.output() + "秒"
+        level++
+    }
 
     // 把buttons從網頁移除，清空balls陣列
     for(let e of balls) e.node.remove();
@@ -51,7 +59,7 @@ function reset(is_failed){
             return
         }
         
-        countdown.innerText = t + "秒後重啟遊戲"
+        countdown.innerText = t + "秒後開始遊戲"
         t--
 
     }, 1000)

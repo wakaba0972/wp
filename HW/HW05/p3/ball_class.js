@@ -9,8 +9,8 @@ const MIN_RADIUS = 60
 const MAX_RADIUS = 70
 
 // 按鈕速度
-const MIN_VELOCITY = 2
-const MAX_VELOCITY = 6
+var MIN_VELOCITY = 2
+var MAX_VELOCITY = 5
 
 //
 function rand(min,max){
@@ -47,14 +47,14 @@ function bounce(b1, b2){
 }
 
 class Button_Ball{
-    constructor(idx){
+    constructor(idx, level){
         this.clicked = false
 
         // 球的半徑, 座標, 速度, 質量(假設密度相同，所以是半徑平方) 
         this.r = rand(MIN_RADIUS, MAX_RADIUS)
         this.x = rand(LEFT + this.r, RIGHT - this.r)
         this.y = rand(TOP + this.r, BUTTOM - this.r)
-        this.v = rand(MIN_VELOCITY, MAX_VELOCITY)
+        this.v = rand(MIN_VELOCITY, MAX_VELOCITY) + level
         this.angle = rand(0, 2 * Math.PI)
         this.vx = Math.cos(this.angle) * this.v
         this.vy = Math.sin(this.angle) * this.v
@@ -86,7 +86,7 @@ class Button_Ball{
 //Don't Click ME按鈕的class, 繼承自Button_Ball
 class Normal_Button_Ball extends Button_Ball {
     constructor(idx) {
-        super(idx)
+        super(idx, level)
 
         this.node.innerText = "Don't Click ME"
         this.node.onclick = function() {balls[idx].activate()}
@@ -112,7 +112,7 @@ class Normal_Button_Ball extends Button_Ball {
 //Click ME按鈕的class, 也是繼承自Button_Ball
 class Reset_Button_Ball extends Button_Ball {
     constructor(idx) {
-        super(idx)
+        super(idx, level)
 
         this.node.style.backgroundColor = "gray"
 
