@@ -12,7 +12,7 @@ const MAX_RADIUS = 70
 const MIN_VELOCITY = 2
 const MAX_VELOCITY = 5
 
-//
+// 亂數生成
 function rand(min,max){
     return Math.floor(Math.random()*max)+min;
 };
