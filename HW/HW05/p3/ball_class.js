@@ -47,7 +47,7 @@ function bounce(b1, b2){
 }
 
 class Button_Ball{
-    constructor(idx, level){
+    constructor(idx){
         this.clicked = false
 
         // 球的半徑, 座標, 速度, 質量(假設密度相同，所以是半徑平方) 
@@ -86,7 +86,7 @@ class Button_Ball{
 //Don't Click ME按鈕的class, 繼承自Button_Ball
 class Normal_Button_Ball extends Button_Ball {
     constructor(idx) {
-        super(idx, level)
+        super(idx)
 
         this.node.innerText = "Don't Click ME"
         this.node.onclick = function() {balls[idx].activate()}
@@ -112,7 +112,7 @@ class Normal_Button_Ball extends Button_Ball {
 //Click ME按鈕的class, 也是繼承自Button_Ball
 class Reset_Button_Ball extends Button_Ball {
     constructor(idx) {
-        super(idx, level)
+        super(idx)
 
         this.node.style.backgroundColor = "gray"
 

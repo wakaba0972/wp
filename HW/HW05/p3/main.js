@@ -24,8 +24,8 @@ function init(){
 
     // 宣告眾button們
     balls = new Array()
-    for(let i=0; i<NUM; i++) balls.push(new Normal_Button_Ball(i, level))
-    for(let i=0; i<RNUM; i++) balls.push(new Reset_Button_Ball(i, level))
+    for(let i=0; i<NUM; i++) balls.push(new Normal_Button_Ball(i))
+    for(let i=0; i<RNUM; i++) balls.push(new Reset_Button_Ball(i))
 
     // 進入requestAnimationFrame 每禎執行update()
     requestAnimationFrame(update)
