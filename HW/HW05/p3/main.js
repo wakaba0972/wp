@@ -17,7 +17,7 @@ let timer1 = new Timer()
 
 function init(){
     rest = NUM;
-    title.innerText = "點亮所有Don't Click ME按鈕!\nLevel " + (level + 1)
+    title.innerText = "點亮所有\"Don't Click ME\"按鈕!\nLevel " + (level + 1)
     countdown.innerText = ""
 
     // 開始計時
