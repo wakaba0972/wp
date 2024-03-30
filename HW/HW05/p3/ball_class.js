@@ -22,7 +22,7 @@ function isCollision(b1, b2){
     let curDistance = (b1.x - b2.x) ** 2 + (b1.y - b2.y) ** 2;
 	let nextDistance = ((b1.x + b1.vx) - (b2.x + b2.vx)) ** 2 + ((b1.y + b1.vy) - (b2.y + b2.vy)) ** 2;
 
-    // 後面的nextDistance < curDistance可以避免球黏在一起
+    // nextDistance < curDistance可以避免球黏在一起
 	return  curDistance <= (b1.r + b2.r) ** 2 && nextDistance < curDistance ;
 }
 
@@ -50,7 +50,7 @@ class Button_Ball{
     constructor(idx){
         this.clicked = false
 
-        // 球的半徑, 座標, 速度, 質量(假設密度相同，所以是半徑平方) 
+        // 球的半徑, 座標, 速度, 質量
         this.r = rand(MIN_RADIUS, MAX_RADIUS)
         this.x = rand(LEFT + this.r, RIGHT - this.r)
         this.y = rand(TOP + this.r, BUTTOM - this.r)
@@ -58,7 +58,7 @@ class Button_Ball{
         this.angle = rand(0, 2 * Math.PI)
         this.vx = Math.cos(this.angle) * this.v
         this.vy = Math.sin(this.angle) * this.v
-        this.m = this.r ** 2
+        this.m = Math.PI * this.r ** 2
 
         // 新增button元素
         this.node = document.createElement("button")
