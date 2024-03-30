@@ -42,8 +42,8 @@ function reset(is_failed){
                           "你被 buttons[" + (killer_idx) + "] 所擊殺:\n\n" +
                           "兇手資料:\n\n" + 
                           `半徑 =  ${balls[killer_idx].r}\n` +
-                          `質量 =  ${balls[killer_idx].m}\n` +
-                          `速度 = ${Math.sqrt(balls[killer_idx].vx ** 2 + balls[killer_idx].vy ** 2).toFixed(4)}\n`
+                          `速度 = ${Math.sqrt(balls[killer_idx].vx ** 2 + balls[killer_idx].vy ** 2).toFixed(4)}\n` +
+                          `質量 =  ${balls[killer_idx].m.toFixed(4)}\n`
         level = 0;
     }
     else {
