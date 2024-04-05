@@ -1,9 +1,3 @@
-// 邊界
-const LEFT = 0
-const TOP = 0
-const RIGHT = window.innerWidth - 50
-const BUTTOM = window.innerHeight - 50
-
 // 按鈕半徑
 const MIN_RADIUS = 60
 const MAX_RADIUS = 70
@@ -11,6 +5,12 @@ const MAX_RADIUS = 70
 // 按鈕速度
 const MIN_VELOCITY = 2
 const MAX_VELOCITY = 5
+
+// 邊界
+const LEFT = 0
+const TOP = 0
+const RIGHT = window.innerWidth - MAX_RADIUS
+const BUTTOM = window.innerHeight - MAX_RADIUS
 
 // 亂數生成
 function rand(min,max){
