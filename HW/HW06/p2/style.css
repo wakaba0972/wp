@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#center {
+    color: white;
+    font-size: 200px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#side {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 100vh;
+    background-color: gray;
+    transition: width 1s;
+}
+
+.cat {
+    left: 20px;
+    display: flex;
+    white-space: nowrap;
+    flex-direction: column;
+
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 1;
+    max-width: 48763px;
+}
+
+.invisible {
+    opacity: 0;
+    max-width: 0px;
+    overflow: hidden;
+}
+
+label {
+    font-size:30px;
+    margin-left: 10pt;
+    margin-top: 10pt;
+}
+
+a {
+    position: relative;
+    left: 10pt;
+    font-size:20px;
+    width: 1px;
+}
