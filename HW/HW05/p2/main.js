@@ -29,12 +29,12 @@ function move(){
     let shift = 100 * ease(t);
 
     // 碰到邊界就改變方向
-    if(ori_pos + a * shift > window.innerWidth - width && !dir || ori_pos + a * shift < 0 && dir) {
+    if(ori_pos + a * shift > window.innerWidth - width && !dir || ori_pos + a * shift < left && dir) {
         dir = !dir;
         a *= -1
 
         if(dir) ori_pos = window.innerWidth
-        else ori_pos = 0
+        else ori_pos = left
     }
 
     btn.style.left = ori_pos + a * shift;
@@ -52,6 +52,9 @@ let t;
 let dir = 0;
 let ori_pos
 
+let left = 200;
 let width = 100;
 let height = 100;
 let btn = document.getElementById('btn');
+
+btn.style.left = left;

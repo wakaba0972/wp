@@ -7,7 +7,7 @@ const MIN_VELOCITY = 2
 const MAX_VELOCITY = 5
 
 // 邊界
-const LEFT = 0
+const LEFT = 50
 const TOP = 0
 const RIGHT = window.innerWidth - MAX_RADIUS
 const BUTTOM = window.innerHeight - MAX_RADIUS

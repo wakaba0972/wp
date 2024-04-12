@@ -20,3 +20,7 @@ function toggle(){
     }
 }
 
+function update(url){
+    let frame = document.querySelector('iframe');
+    frame.src = url;
+}
