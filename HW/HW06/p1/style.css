@@ -16,7 +16,7 @@ img {
 #side {
     margin: 0;
     padding: 0;
-    width: 50pt;
+    width: 50px;
     height: 100vh;
     background-color: gray;
     transition: all 1s;
