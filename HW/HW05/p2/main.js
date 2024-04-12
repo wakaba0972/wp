@@ -52,9 +52,7 @@ let t;
 let dir = 0;
 let ori_pos
 
-let left = 200;
+let left = 50;
 let width = 100;
 let height = 100;
 let btn = document.getElementById('btn');
-
-btn.style.left = left;
