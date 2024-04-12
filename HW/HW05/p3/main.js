@@ -6,9 +6,11 @@ const RNUM = 6
 let balls;
 let rest;
 
+// 顯示文字的<h1>元素
 let title = document.getElementById("title")
 let countdown = document.getElementById("countdown")
 
+// 紀錄關卡等級，會影響按鈕速度，還有點擊到的按鈕索引值
 let level = 0;
 let killer_idx;
 
@@ -42,8 +44,8 @@ function reset(is_failed){
                           "你被 buttons[" + (killer_idx) + "] 所擊殺:\n\n" +
                           "兇手資料:\n\n" + 
                           `半徑 =  ${balls[killer_idx].r}\n` +
-                          `質量 =  ${balls[killer_idx].m}\n` +
-                          `速度 = ${Math.sqrt(balls[killer_idx].vx ** 2 + balls[killer_idx].vy ** 2).toFixed(4)}\n`
+                          `速度 = ${Math.sqrt(balls[killer_idx].vx ** 2 + balls[killer_idx].vy ** 2).toFixed(4)}\n` +
+                          `質量 =  ${balls[killer_idx].m.toFixed(4)}\n`
         level = 0;
     }
     else {
@@ -81,12 +83,14 @@ function update(){
         return
     }
 
+    //碰撞檢測
     for(let i=0; i<NUM+RNUM; i++){
         for(let j=i+1; j<NUM+RNUM; j++){
             if(isCollision(balls[i], balls[j])) collision(balls[i], balls[j]);
         }
     }
 
+    //更新位置
     for(b of balls) b.move()
 
     requestAnimationFrame(update)

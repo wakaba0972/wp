@@ -15,6 +15,6 @@ class Timer{
     }
 
     output(){
-        return this.endTime = (this.endTime - this.startTime) / 1000
+        return (this.endTime - this.startTime) / 1000
     }
 }
