@@ -13,6 +13,7 @@ img {
     border-radius: 10px;
 }
 
+/*sidebar的z-index為1 iframe的z-index為0 所以sidebar會渲染在iframe上面*/
 #side {
     margin: 0;
     padding: 0;
@@ -32,11 +33,13 @@ img {
     transition: all 1s;
 }
 
+/*sidebar拉出來時可見 opacity設為1*/
 .visible {
     opacity: 1;
     max-width: 48763px;
 }
 
+/*sidebar縮回去時不可見 opacity設為0 opacity為0但滑鼠仍能點擊，所以把max-width設為0，讓元件縮到不見*/
 .invisible {
     opacity: 0;
     max-width: 0px;

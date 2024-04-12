@@ -23,6 +23,8 @@ img {
     z-index: 1;
 }
 
+/*sidebar拉出來時可見 opacity設為1*/
+/*side觸發hover時同時變更cat的值*/
 #side:hover {
     width: 150pt;
     .cat {
@@ -31,6 +33,7 @@ img {
     }
 }
 
+/*sidebar拉出來時可見 opacity設為1*/
 .cat {
     left: 20px;
     opacity: 0;
