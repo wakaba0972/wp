@@ -19,11 +19,12 @@
     border-radius: 5px;
     width: 1000px;
     height: 400px;
-    background-color: rgb(170, 162, 162);
+    background-color: rgb(212, 208, 208);
+    gap: 30px;
 }
 
 #title {
-    font-size: 50px;
+    font-size: 50px; 
 }
 
 body{
