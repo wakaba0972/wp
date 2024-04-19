@@ -7,7 +7,6 @@ function hash() {
     })
 }
 
-
 async function digestMessage(message) {
     const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
     const hashBuffer = await crypto.subtle.digest("SHA-256", msgUint8); // hash the message
@@ -18,9 +17,4 @@ async function digestMessage(message) {
     return hashHex;
   }
 
-let text = "";
-
-window.onload = function() {
-    document.getElementById('data_block').addEventListener("keyup", hash);
-    hash();
-}
+window.onload = hash()

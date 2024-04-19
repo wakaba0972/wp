@@ -16,10 +16,14 @@
 }
 
 .main-section {
-    border-radius: 20px;
-    width: 800px;
-    height: 700px;
+    border-radius: 5px;
+    width: 1000px;
+    height: 400px;
     background-color: rgb(170, 162, 162);
+}
+
+#title {
+    font-size: 50px;
 }
 
 body{
