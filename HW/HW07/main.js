@@ -1,3 +1,13 @@
+function hash() {
+    let text = document.getElementById('data_block').value;
+    console.log(text);
+    digestMessage(text)
+    .then((res) => {
+        document.getElementById('output_block').value = res;
+    })
+}
+
+
 async function digestMessage(message) {
     const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
     const hashBuffer = await crypto.subtle.digest("SHA-256", msgUint8); // hash the message
@@ -11,14 +21,6 @@ async function digestMessage(message) {
 let text = "";
 
 window.onload = function() {
-    document.getElementById('data_block').addEventListener("keyup", function(){
-        let ntext = document.getElementById('data_block').value;
-        if(ntext !== text){
-            text = ntext;
-            digestMessage(text)
-            .then((res) => {
-                document.getElementById('output_block').value = res;
-            })
-        }
-    })
+    document.getElementById('data_block').addEventListener("keyup", hash);
+    hash();
 }
