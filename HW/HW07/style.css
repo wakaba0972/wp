@@ -1,0 +1,28 @@
+.flex-container-v {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.flex-container-h {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.center {
+    align-items: center; 
+    justify-content: center;
+}
+
+.main-section {
+    border-radius: 20px;
+    width: 800px;
+    height: 700px;
+    background-color: rgb(170, 162, 162);
+}
+
+body{
+    font-family: 'consolas';
+    font-size: 20px;
+}
