@@ -8,12 +8,17 @@ async function digestMessage(message) {
     return hashHex;
   }
 
+let text = "";
+
 window.onload = function() {
     document.getElementById('data_block').addEventListener("keyup", function(){
-        let text = document.getElementById('data_block').value;
-        digestMessage(text)
+        let ntext = document.getElementById('data_block').value;
+        if(ntext !== text){
+            text = ntext;
+            digestMessage(text)
             .then((res) => {
                 document.getElementById('output_block').value = res;
-        })
+            })
+        }
     })
 }
