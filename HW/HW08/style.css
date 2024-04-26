@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+div {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    grid-template-rows: 10vh auto;
+    background-color: blueviolet;
+}
+
+.grid-container > div {
+    background-color: aliceblue;
+}
+
+.head-item {
+    grid-column: 1 / 4;
+}
