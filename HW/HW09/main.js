@@ -14,7 +14,7 @@ let isPause = false;
 //設定的div
 let configuration = document.getElementById('setting');
 
-//周圍8格有多少活/死細胞時改變狀態，以2進位存。
+//周圍8格有多少活/死細胞時改變狀態。
 let survives_config = [0, 0, 1, 1, 0, 0, 0, 0, 0];
 let born_config = [0, 0, 0, 1, 0, 0, 0, 0, 0];
 
