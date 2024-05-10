@@ -1,0 +1,111 @@
+<html>
+    <link href="./style.css" rel="stylesheet"> 
+    <body>
+        <canvas id="cvs"></canvas>
+        <div id="setting">
+
+            <label style="margin: 10px; color: azure; font-size: 20; display: block;">格子大小:</label>
+            <input style="margin-left: 10px; display: inline; width: 250;" type="range" min="10" max="100" value="25" onchange="size_change()">
+
+            <br><br>
+
+            <label style="margin: 10px; color: azure; font-size: 20; display: block;">周圍有x個活細胞時存活:</label>
+            <div style="display: inline-block;">
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">0</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s0">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">1</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s1">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">2</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s2" checked>
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">3</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s3" checked>
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">4</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s4">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">5</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s5">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">6</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s6">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">7</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s7">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">8</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="s8">
+                </div>
+            </div>
+
+            <br><br>
+
+            <label style="margin: 10px; color: azure; font-size: 20; display: block;">周圍有x個活細胞時出生:</label>
+            <div style="display: inline-block;">
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">0</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b0">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">1</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b1">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">2</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b2">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">3</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b3" checked>
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">4</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b4">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">5</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b5">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">6</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b6">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">7</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b7">
+                </div>
+                <div style="display: inline-block;">
+                    <label style="margin-left: 10px; display: block; color: azure; font-size: 20;">8</label>
+                    <input style="margin-left: 10px;" type="checkbox" name="b8">
+                </div>
+            </div>
+
+            <br><br>
+
+            <label style="margin: 10px; color: azure; font-size: 20; display: block;">推薦菜單</label>
+            <select style="margin-left: 10px" onchange="select_chnage()">
+                <option value="0">經典</option>
+                <option value="1">迷宮</option>
+                <option value="2">細胞</option>
+                <option value="3">遞迴</option>
+            </select>
+
+            <br><br><br><br><br><br><br><br><br><br>
+
+            <button style="margin: 10px; width: 200; height: 50;" onclick="config_enter()">確認</button>
+
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
