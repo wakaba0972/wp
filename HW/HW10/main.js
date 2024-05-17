@@ -1,3 +1,5 @@
+// https://wakaba0972.github.io/wp/HW/HW10/index.html
+
 let input = document.getElementById("input");
 let response = document.getElementById("response");
 let timer;
