@@ -6,7 +6,7 @@
     height: 20%;  
     resize: none;
     border-radius: 10px;
-    background-color: rgb(80, 78, 78);
+    background-color: rgb(54, 54, 54);
     color: azure;
     font-size: larger;
     font-family: Consolas;
@@ -18,15 +18,28 @@ body {
     background-color: black;
 }
 
+pre {
+    background-color: black;
+    border-radius: 10px;
+    padding: 1%;
+}
+
 #response {
     position: relative;
     display: inline-block;
+    overflow: scroll;
+    padding: 1%;
     margin: 1%;
-    width: 98%;
-    height: 75%; 
-    background-color: rgb(80, 78, 78);
+    width: 96%;
+    height: 70%; 
+    background-color: rgb(54, 54, 54);
     border-radius: 10px;
     color: azure;
     font-size: larger;
     font-family: Consolas;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
 }

@@ -1,11 +1,16 @@
 <html>
+    <header>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.1/markdown-it.min.js "></script>Z
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.1/highlight.min.js"></script>
+        <link href="./style.css" rel="stylesheet"> 
+        <link href="github-dark-dimmed.css" rel="stylesheet"> 
+    </header>
     <body>
         <textarea id="input"></textarea>
-        <textarea id="response" markdown=1 disabled></textarea>
-        <div markdown="1"></div>
+        <div id="response" markdown=1></div>
 
         <script src="fetchGroq.js"></script>
+        <script src="markdown-it.js"></script>
         <script src="main.js" charset="utf-8"></script>
-        <link href="./style.css" rel="stylesheet"> 
     </body>
 </html>

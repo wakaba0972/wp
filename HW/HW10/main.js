@@ -13,10 +13,13 @@ input.addEventListener('keydown', function (e){
         //let text = '將"' + input.value + '"翻譯成通順的英文，不要講任何多餘的話';
         let text = input.value;
         clearInterval(timer);
-        response.value = "";
+        response.innerHTML = "";
         input.value = "";
         
         chat(text).then(res => {
+
+            res = md.render(res);
+            //response.innerHTML = res;
 
             let pos = 0;
             let end = res.length;
@@ -26,7 +29,7 @@ input.addEventListener('keydown', function (e){
                     clearInterval(timer);
                     return;
                 }
-                response.value += res[pos++];
+                response.innerHTML = res.substring(0, pos += 3);
             }, 5);
 
         })
