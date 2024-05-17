@@ -1,0 +1,32 @@
+#input {
+    display: inline-block;
+    margin: 1%;
+    margin-bottom: 0;
+    width: 98%;  
+    height: 20%;  
+    resize: none;
+    border-radius: 10px;
+    background-color: rgb(80, 78, 78);
+    color: azure;
+    font-size: larger;
+    font-family: Consolas;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#response {
+    position: relative;
+    display: inline-block;
+    margin: 1%;
+    width: 98%;
+    height: 75%; 
+    background-color: rgb(80, 78, 78);
+    border-radius: 10px;
+    color: azure;
+    font-size: larger;
+    font-family: Consolas;
+}
