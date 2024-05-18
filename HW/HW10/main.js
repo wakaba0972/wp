@@ -10,30 +10,27 @@ input.addEventListener('keydown', function (e){
         e.preventDefault();
 
         // init
-        //let text = '將"' + input.value + '"翻譯成通順的英文，不要講任何多餘的話';
-        let text = input.value;
         clearInterval(timer);
+        let text = input.value;
         response.innerHTML = "";
         input.value = "";
         
         chat(text).then(res => {
-
-            res = md.render(res);
-            //response.innerHTML = res;
+            res = res.replaceAll("：**", "**:") //解決bold和colon不相容
+            res = md.render(res); //轉換markdown
 
             let pos = 0;
             let end = res.length;
             
+            // 文字動畫
             timer = setInterval(() => {
                 if(pos >= end) {
                     clearInterval(timer);
                     return;
                 }
-                response.innerHTML = res.substring(0, pos += 3);
-            }, 5);
+                response.innerHTML = res.substring(0, pos += 1);
+            }, 1);
 
         })
     }
 });
-
-//chat(PROMPT);

@@ -1,14 +1,16 @@
 <html>
-    <header>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.1/markdown-it.min.js "></script>Z
+    <head>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="https://cdn.jsdelivr.net/npm/markdown-it-latex2img@latest/dist/markdown-it-latex2img.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.1/highlight.min.js"></script>
         <link href="./style.css" rel="stylesheet"> 
         <link href="github-dark-dimmed.css" rel="stylesheet"> 
-    </header>
+        <link href="katex.css" rel="stylesheet"> 
+    </head>
     <body>
         <textarea id="input"></textarea>
-        <div id="response" markdown=1></div>
-
+        <div id="response"></div>
         <script src="fetchGroq.js"></script>
         <script src="markdown-it.js"></script>
         <script src="main.js" charset="utf-8"></script>

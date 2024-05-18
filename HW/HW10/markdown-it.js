@@ -29,5 +29,6 @@ defaults.highlight = function (str, lang) {
 
 };
 
-// markdown-it
-const md = window.markdownit(defaults);
+
+const md = window.markdownit(defaults); // markdown-it
+md.use(window.markdownitLatex2img, {style: "transform:scale(1.8);text-align:center;filter:invert(100%)"}); // 串接latex
