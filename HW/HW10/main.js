@@ -42,7 +42,7 @@ input.addEventListener('keydown', function (e){
     }
 });
 
-// 解決latex格式錯誤
+// 用dfs解決latex格式錯誤
 function dfs_fix_latex(node = debug){
     for(let child of node.childNodes){ //遍歷子節點
 
