@@ -28,7 +28,8 @@ input.addEventListener('keydown', function (e){
                     clearInterval(timer);
                     return;
                 }
-                response.innerHTML = res.substring(0, pos += 1);
+                response.innerHTML = res.substring(0, pos++);
+                response.scrollTo(0, response.scrollHeight);
             }, 1);
 
         })
