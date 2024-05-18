@@ -18,7 +18,7 @@ input.addEventListener('keydown', function (e){
         
         chat(text).then(res => {
             res = fix_markdown(res); //修正markdown格式
-            res = md.render(res); //轉換markdown
+            res = md.render(res); //markdown 2 html
 
             debug.innerHTML = res;
             dfs_fix_latex(); // 修正latex的$$格式問題
@@ -46,16 +46,16 @@ input.addEventListener('keydown', function (e){
 function dfs_fix_latex(node = debug){
     for(let child of node.childNodes){ //遍歷子節點
 
-        if(child.nodeName == "CODE" || child.nodeName == "PRE") continue; // 不更動code和pre裡面的latex
+        if(child.nodeName == "CODE" || child.nodeName == "PRE") continue; // 不更動code和pre裡面的$$
 
         if(child.nodeName == "#text" && child.textContent.includes("$$")){ //尋找text node
-            let s = child.textContent; // 獲取text
+            let s = child.textContent; // 獲取markdown
             s = s.replaceAll("$$", "\n$$$\n") //解決latex block不顯示
-            s = md.render(s); // text轉markdown
+            s = md.render(s); // markdown 2 html
 
             let new_node = document.createElement("p") // 建立new_node
             new_node.style = "display: inline-block";
-            new_node.innerHTML = s; // 將markdown放進new_node裡
+            new_node.innerHTML = s;
 
             child.replaceWith(new_node) // 將child替換成new_node
             continue;
