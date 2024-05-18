@@ -7,21 +7,39 @@
     resize: none;
     border-radius: 10px;
     background-color: rgb(54, 54, 54);
-    color: azure;
     font-size: larger;
     font-family: Consolas;
+    color: azure;
+}
+
+table, tr, td, th {
+    border: 1px solid gray;
 }
 
 body {
     margin: 0;
     overflow: hidden;
     background-color: black;
+    color: azure;
 }
 
 pre {
     background-color: black;
     border-radius: 10px;
     padding: 1%;
+}
+
+code {
+    padding: 2px;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 10px;
+    background-color: #22272e;
+}
+
+pre > code {
+    margin: 0;
+    padding: 0;
 }
 
 #response {
@@ -32,11 +50,15 @@ pre {
     margin: 1%;
     width: 96%;
     height: 70%; 
+    color: azure;
     background-color: rgb(54, 54, 54);
     border-radius: 10px;
-    color: azure;
     font-size: larger;
     font-family: Consolas;
+}
+
+#debug {
+    visibility: hidden;
 }
 
 ::-webkit-scrollbar {

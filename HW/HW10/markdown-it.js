@@ -31,4 +31,4 @@ defaults.highlight = function (str, lang) {
 
 
 const md = window.markdownit(defaults); // markdown-it
-md.use(window.markdownitLatex2img, {style: "transform:scale(1.5);text-align:center;filter:invert(100%)"}); // 串接latex
+md.use(window.markdownitLatex2img, {style: "transform:scale(1); text-align:center; filter:invert(100%);"}); // 串接latex
