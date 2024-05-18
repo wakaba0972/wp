@@ -13,7 +13,8 @@
 |  github-dark-dimmed.css    | https://github.com/highlightjs/highlight.js/blob/main/src/styles/github-dark-dimmed.css   |
 
 ## 參考資料
- * Markdown-it 的用法參考官網
+ * Markdown-it 的用法參考github
  * highlight.js 的用法直接複製 [stackoverflow](https://stackoverflow.com/questions/64332569/highlight-code-with-markdown-it-js-and-highlight-js)
- * markdown-it-latex2img 也是參考官網, 縮放img大小改成zoom而不是transform:scale(), 因為scale()放大後會把周圍的字遮住。
+ * markdown-it-latex2img 也是參考github, 縮放img大小改成zoom而不是transform:scale(), 因為scale()放大後會把周圍的字遮住。
+ * github-dark-dimmed.css 從highlight.js的github找到的
 
