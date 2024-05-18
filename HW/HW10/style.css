@@ -12,6 +12,7 @@
     color: azure;
 }
 
+/*table的網格*/
 table, tr, td, th {
     border: 1px solid gray;
 }
@@ -23,8 +24,9 @@ body {
     color: azure;
 }
 
+/*把img放大130%*/
 img {
-    zoom: 120%;
+    zoom: 130%;
 }
 
 pre {
@@ -66,6 +68,7 @@ pre > code {
     visibility: hidden;
 }
 
+/*隱藏scrollbar*/
 ::-webkit-scrollbar {
     width: 0;  
     background: transparent; 
