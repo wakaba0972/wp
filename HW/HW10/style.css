@@ -55,6 +55,7 @@ pre > code {
     border-radius: 10px;
     font-size: larger;
     font-family: Consolas;
+    zoom: 115%;
 }
 
 #debug {
