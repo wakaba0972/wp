@@ -23,6 +23,10 @@ body {
     color: azure;
 }
 
+img {
+    zoom: 120%;
+}
+
 pre {
     background-color: black;
     border-radius: 10px;
