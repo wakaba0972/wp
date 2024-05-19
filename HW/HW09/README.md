@@ -1,5 +1,7 @@
 # 康威生命遊戲
 
+## [網頁](https://wakaba0972.github.io/wp/HW/HW09/index.html)
+
 ## 操作
 
 | 按鍵 | 說明 |
