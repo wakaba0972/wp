@@ -19,4 +19,4 @@ https://zh.wikipedia.org/zh-tw/%E5%BA%B7%E5%A8%81%E7%94%9F%E5%91%BD%E6%B8%B8%E6%
 * Conway's Game of Life 
 https://play.google.com/store/apps/details?id=com.baiels.gameoflife&hl=zh_TW&gl=US&pli=1
 另外3個規則參考這個遊戲裡的
-$\int_{0}^{\infty} f(x) dx$
+
