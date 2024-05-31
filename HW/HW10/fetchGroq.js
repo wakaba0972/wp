@@ -1,4 +1,4 @@
-let key = "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"
+let key = "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"
 
 async function chat(q) {
     const jsonResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", 
