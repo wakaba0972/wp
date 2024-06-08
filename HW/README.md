@@ -86,7 +86,7 @@
     * 用flex去做側欄的排版。
     * 用iframe去呈現子頁面。
 ---
-### 2. CSS Transition
+### 2. Javascript
 * ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW06/p2/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW06/p2)
 * ### 原創程度:
     * flex的用法參考w3school
