@@ -47,7 +47,7 @@
 ## 作業5 - DOM 的 JavaScript 操控練習
 
 ### 1. 按鈕按下去寬高都會變大 10px
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW05/p1/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW05/p1)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW05/p1/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW05/p1)
 * ### 原創程度:
     * Easing Function取自於[這裡](https://easings.net/)，使用javascript版本 + setInterval()實現。
     * 其餘全部原創
@@ -55,7 +55,7 @@
     * 沒做太多美化，但是按鈕的移動加上了Easing Function。
 ---
 ### 2. 按鈕按下去會右移 10px
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW05/p2/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW05/p2)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW05/p2/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW05/p2)
 * ### 原創程度:
     * Easing Function取自於[這裡](https://easings.net/)，使用javascript版本 + setInterval()實現。
     * 其餘全部原創
@@ -63,7 +63,7 @@
     * 沒做太多美化，但是按鈕的移動加上了Easing Function。
 ---
 ### 3. 一個會自己到處移動的按鈕
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW05/p3/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW05/p3)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW05/p3/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW05/p3)
 * ### 原創程度:
     * 禁止選取文字的css參考W3Schools
     * 其餘全部原創。
@@ -78,7 +78,7 @@
 ## 作業6 - 側欄 -- CSS Transition 與 JavaScript
 
 ### 1. CSS Transition
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW06/p1/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW06/p1)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW06/p1/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW06/p1)
 * ### 原創程度:
     * flex的用法參考w3school
     * 其餘全部原創
@@ -87,7 +87,7 @@
     * 用iframe去呈現子頁面。
 ---
 ### 2. CSS Transition
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW06/p2/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW06/p2)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW06/p2/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW06/p2)
 * ### 原創程度:
     * flex的用法參考w3school
     * 其餘全部原創
@@ -97,7 +97,7 @@
 
 ## 作業7 - SHA256 雜湊介面
 
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW07/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW07)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW07/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW07)
 * ### 原創程度:
     * SHA256的函數直接使用老師的程式碼。
     * 其餘全部原創。
@@ -107,7 +107,7 @@
 
 ## 作業9 - 請做一個有繪圖的網頁
 
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW09/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW09)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW09/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW09)
 
 * ### 操作說明
     | 按鍵 | 說明 |
@@ -130,7 +130,7 @@
 
 ## 作業10 - 請用 groq 大語言模型 LLM 做一個簡單的網頁應用
 
-* ### 網頁:  [點此](wakaba0972.github.io/wp/HW/HW10/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW10)
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW10/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW10)
 * ### 原創程度:
     * Markdown-it 的用法參考[github]((https://github.com/markdown-it/markdown-it))
     * highlight.js 的用法直接複製 [stackoverflow](https://stackoverflow.com/questions/64332569/highlight-code-with-markdown-it-js-and-highlight-js)
