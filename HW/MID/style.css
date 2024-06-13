@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+canvas {
+    background-color: aqua;
+
+}
+
+#config_bar{
+    border-radius: 1%;
+    background-color: rgb(187, 187, 187);
+    width: 15vw;
+    height: 100vh;
+}
+
+h1{
+    margin-left: 10px;
+}

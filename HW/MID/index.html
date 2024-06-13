@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <canvas id="cvs"></canvas>
+        <div id="config_bar">
+            <div>
+                <h1>修改</h1>
+                <button id="obstacle_b" style=" margin-left: 5px;" onclick="setMouseMode(0)">路障</button>
+                <button id="start_b" onclick="setMouseMode(1)">起點</button>
+                <button id="destination_b" onclick="setMouseMode(2)">終點</button>
+                <button id="erase_b" onclick="setMouseMode(3)">橡皮擦</button>
+                <button id="clear_b">全部清除</button>
+            </div>
+            <div>
+                <h1>模式</h1>
+            </div>
+        </div>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
