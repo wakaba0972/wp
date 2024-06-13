@@ -1,20 +1,33 @@
 <html>
     <head>
         <link href="./style.css" rel="stylesheet"> 
+        <script src="dataStructure.js" charset="utf-8"></script>
+        <script src="algorithm.js" charset="utf-8"></script>
     </head>
     <body>
         <canvas id="cvs"></canvas>
         <div id="config_bar">
             <div>
                 <h1>修改</h1>
-                <button id="obstacle_b" style=" margin-left: 5px;" onclick="setMouseMode(0)">路障</button>
+                <button id="obstacle_b" onclick="setMouseMode(0)">路障</button>
                 <button id="start_b" onclick="setMouseMode(1)">起點</button>
                 <button id="destination_b" onclick="setMouseMode(2)">終點</button>
-                <button id="erase_b" onclick="setMouseMode(3)">橡皮擦</button>
-                <button id="clear_b">全部清除</button>
+                <button id="erase_b" onclick="setMouseMode(3)">擦子</button>
+                <button id="clear_b" onclick="clearAll()">全部清除</button>
+                <button id="clear_b" onclick="clearTrace()">清除軌跡</button>
             </div>
             <div>
                 <h1>模式</h1>
+                <div>
+                    <input type="radio" checked name="modeselect" style="display: inline-block; margin-left: 15px; zoom: 1.5;">
+                    <p style="display: inline-block ; zoom: 1.5;">BFS</p>
+                    <br>
+                    <input type="radio" name="modeselect" style="display: inline-block; margin-left: 15px; zoom: 1.5;">
+                    <p style="display: inline-block ; zoom: 1.5;">DFS</p>
+                </div>
+            </div>
+            <div>
+                <button style="height: 100px; width: 200px; margin-left: 10px;" onclick="start()">開始</button>
             </div>
         </div>
         <script src="main.js" charset="utf-8"></script>
