@@ -72,7 +72,6 @@ function clearAll(){
 }
 
 function clearTrace(){
-    if(!reset_req) return;
     for(let i=0; i<ROWS; i++){
         for(let j=0; j<=COLS; j++){
             if(mp[i][j] == 4 || mp[i][j] == 5) mp[i][j] = 3;
