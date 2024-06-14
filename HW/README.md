@@ -170,7 +170,7 @@
             
             考慮到有`<pre>`和`<code>`的存在，它們也可能包含LaTeX，不能跟剛剛一樣直接全部`replaceAll()`，那轉換兩次就好了。第一次將markdown轉成html後，因為沒轉換成功的LaTeX字串都會在textNode裡，就用**DFS**去找含有`$$`的textNode，`replaceAll("$$", "\n$$\n")`後做第二次轉換，然後建立一個newNode把轉換得到的html丟進去，最後textNode替換成newNode就好了。
 ---      
-## 作業10 - 請用 groq 大語言模型 LLM 做一個簡單的網頁應用            
+## 作業11 - 請閱讀 denoApiService + Blog 的程式碼，並寫下你的理解，然後為程式碼加上詳細的註解            
 * ### 修改
     * 原本/sqlite無法回應，我發現是sqlHandler裡的`new DB('db/${db}.db')`路徑有問題，將其改為`new DB(Deno.cwd() + '/專案/denoApiService/db/${db}.db')`絕對路徑就好了
 ---
