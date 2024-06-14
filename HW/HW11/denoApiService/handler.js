@@ -9,7 +9,10 @@ export async function sqlHandler(ctx) {
         console.log('json=', json)
         let db = json.db
         let sql = json.sql
-        const dbo = new DB(`db/${db}.db`)
+
+        // console.log(Deno.cwd() + "\\專案\\denoApiService\\db")
+        const dbo = new DB(Deno.cwd() + `/專案/denoApiService/db/${db}.db`)  //更改絕對路徑
+        
         let result = sql ? dbo.query(sql) : '[]'
         dbo.close()
         ctx.response.body = result
