@@ -1,0 +1,9 @@
+{
+    "url": "https://api.groq.com/openai/v1/chat/completions", 
+    "body": "{\"model\": \"llama3-8b-8192\",\"messages\": [{\"role\": \"user\", \"content\": \"GPT 是甚麼? 請用中文回答\"}],\"temperature\": 0.7}",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer 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"
+    }
+}
