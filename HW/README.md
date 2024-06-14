@@ -105,6 +105,15 @@
 * ### 實作細節:
     * textarea用onkeyup()捕捉鍵盤事件，實現每按個鍵就能實時更新hash值。
 
+## 作業8 - Layout 佈局
+
+* ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW08/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW08)
+* ### 原創程度:
+    * 參考w3schools
+
+* ### 實作細節:
+    * 無。
+
 ## 作業9 - 請做一個有繪圖的網頁
 
 * ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW09/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW09)
