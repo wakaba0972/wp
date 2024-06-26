@@ -21,22 +21,22 @@ function bfs(){
         queue.pop();
 
         if(visit[v[0]][v[1]] == 1){
-            if(v[0]+1 >= 0 && v[0]+1 < ROWS && v[1] >= 0 && v[1] <= COLS){ // down 0
+            if(v[0]+1 >= 0 && v[0]+1 < ROWS && v[1] >= 0 && v[1] <= COLS && visit[v[0]+1][v[1]] > 1){
                 queue.push([v[0]+1, v[1]]);
                 visit[v[0]+1][v[1]] = 0;
                 dir[v[0]+1][v[1]] = 0;
             }
-            if(v[0] >= 0 && v[0] < ROWS && v[1]+1 >= 0 && v[1]+1 <= COLS){ // right 1
+            if(v[0] >= 0 && v[0] < ROWS && v[1]+1 >= 0 && v[1]+1 <= COLS && visit[v[0]][v[1]+1] > 1){
                 queue.push([v[0], v[1]+1]);
                 visit[v[0]][v[1]+1] = 0;
                 dir[v[0]][v[1]+1] = 1;
             }
-            if(v[0]-1 >= 0 && v[0]-1 < ROWS && v[1] >= 0 && v[1] <= COLS){ // up 2
+            if(v[0]-1 >= 0 && v[0]-1 < ROWS && v[1] >= 0 && v[1] <= COLS && visit[v[0]-1][v[1]] > 1){
                 queue.push([v[0]-1, v[1]]);
                 visit[v[0]-1][v[1]] = 0;
                 dir[v[0]-1][v[1]] = 2;
             }
-            if(v[0] >= 0 && v[0] < ROWS && v[1]-1 >= 0 && v[1]-1 <= COLS){ // left 3
+            if(v[0] >= 0 && v[0] < ROWS && v[1]-1 >= 0 && v[1]-1 <= COLS && visit[v[0]][v[1]-1] > 1){
                 queue.push([v[0], v[1]-1]);
                 visit[v[0]][v[1]-1] = 0;
                 dir[v[0]][v[1]-1] = 3;
@@ -116,22 +116,22 @@ function dfs(){
         stack.pop();
 
         if(visit[v[0]][v[1]] == 1){
-            if(v[0]+1 >= 0 && v[0]+1 < ROWS && v[1] >= 0 && v[1] <= COLS){ // down 0
+            if(v[0]+1 >= 0 && v[0]+1 < ROWS && v[1] >= 0 && v[1] <= COLS && visit[v[0]+1][v[1]] > 1){
                 stack.push([v[0]+1, v[1]]);
                 visit[v[0]+1][v[1]] = 0;
                 dir[v[0]+1][v[1]] = 0;
             }
-            if(v[0] >= 0 && v[0] < ROWS && v[1]+1 >= 0 && v[1]+1 <= COLS){ // right 1
+            if(v[0] >= 0 && v[0] < ROWS && v[1]+1 >= 0 && v[1]+1 <= COLS && visit[v[0]][v[1]+1] > 1){
                 stack.push([v[0], v[1]+1]);
                 visit[v[0]][v[1]+1] = 0;
                 dir[v[0]][v[1]+1] = 1;
             }
-            if(v[0]-1 >= 0 && v[0]-1 < ROWS && v[1] >= 0 && v[1] <= COLS){ // up 2
+            if(v[0]-1 >= 0 && v[0]-1 < ROWS && v[1] >= 0 && v[1] <= COLS && visit[v[0]-1][v[1]] > 1){
                 stack.push([v[0]-1, v[1]]);
                 visit[v[0]-1][v[1]] = 0;
                 dir[v[0]-1][v[1]] = 2;
             }
-            if(v[0] >= 0 && v[0] < ROWS && v[1]-1 >= 0 && v[1]-1 <= COLS){ // left 3
+            if(v[0] >= 0 && v[0] < ROWS && v[1]-1 >= 0 && v[1]-1 <= COLS && visit[v[0]][v[1]-1] > 1){
                 stack.push([v[0], v[1]-1]);
                 visit[v[0]][v[1]-1] = 0;
                 dir[v[0]][v[1]-1] = 3;
