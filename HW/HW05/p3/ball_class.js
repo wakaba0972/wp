@@ -28,7 +28,54 @@ function isCollision(b1, b2){
 
 // 二維彈性碰撞
 function collision(b1, b2){
-	let nb1vx = (b1.vx * (b1.m - b2.m) + 2 * b2.m * b2.vx) / (b1.m + b2.m);
+    let u_vector = {
+        x: b2.x - b1.x,
+        y: b2.y - b1.y
+    };
+    let un_vector = {
+        x: u_vector.x / Math.sqrt(u_vector.x ** 2 + u_vector.y ** 2),
+        y: u_vector.y / Math.sqrt(u_vector.x ** 2 + u_vector.y ** 2)
+    };
+    let ut_vector = {
+        x: -un_vector.y,
+        y: un_vector.x
+    };
+    let v1n = b1.vx * un_vector.x + b1.vy * un_vector.y;
+    let v1t = b1.vx * ut_vector.x + b1.vy * ut_vector.y;
+    let v2n = b2.vx * un_vector.x + b2.vy * un_vector.y;
+    let v2t = b2.vx * ut_vector.x + b2.vy * ut_vector.y;
+    let v1n_after = (v1n * (b1.m - b2.m) + 2 * b2.m * v2n) / (b1.m + b2.m);
+    let v2n_after = (v2n * (b2.m - b1.m) + 2 * b1.m * v1n) / (b1.m + b2.m);
+    let v1n_after_vector = {
+        x: v1n_after * un_vector.x,
+        y: v1n_after * un_vector.y
+    };
+    let v1t_after_vector = {
+        x: v1t * ut_vector.x,
+        y: v1t * ut_vector.y
+    };
+    let v2n_after_vector = {
+        x: v2n_after * un_vector.x,
+        y: v2n_after * un_vector.y
+    };
+    let v2t_after_vector = {
+        x: v2t * ut_vector.x,
+        y: v2t * ut_vector.y
+    };
+    let v1_final_vector = {
+        x: v1n_after_vector.x + v1t_after_vector.x,
+        y: v1n_after_vector.y + v1t_after_vector.y
+    };
+    let v2_final_vector = {
+        x: v2n_after_vector.x + v2t_after_vector.x,
+        y: v2n_after_vector.y + v2t_after_vector.y
+    };
+    b1.vx = v1_final_vector.x;
+    b1.vy = v1_final_vector.y;
+    b2.vx = v2_final_vector.x;
+    b2.vy = v2_final_vector.y;
+
+	/*let nb1vx = (b1.vx * (b1.m - b2.m) + 2 * b2.m * b2.vx) / (b1.m + b2.m);
 	let nb1vy = (b1.vy * (b1.m - b2.m) + 2 * b2.m * b2.vy) / (b1.m + b2.m);
 
 	let nb2vx = (b2.vx * (b2.m - b1.m) + 2 * b1.m * b1.vx) / (b2.m + b1.m);
@@ -37,7 +84,7 @@ function collision(b1, b2){
 	b1.vx = nb1vx;
 	b1.vy = nb1vy;
 	b2.vx = nb2vx;
-	b2.vy = nb2vy;
+	b2.vy = nb2vy;*/
 	
 	//prevent balls stuck together
 	//while(isCollision(b1, b2)){
@@ -51,7 +98,7 @@ class Button_Ball{
         this.clicked = false
 
         // 球的半徑, 座標, 速度, 質量
-        this.r = rand(MIN_RADIUS, MAX_RADIUS)
+        this.r = 50
         this.x = rand(LEFT + this.r, RIGHT - this.r)
         this.y = rand(TOP + this.r, BUTTOM - this.r)
         this.v = rand(MIN_VELOCITY, MAX_VELOCITY) + level
@@ -73,6 +120,14 @@ class Button_Ball{
         // 檢測邊界碰撞, 如果碰到該速度分量 * -1
         if(this.x - this.r <= LEFT && this.vx < 0 || this.x + this.r >= RIGHT && this.vx > 0) this.vx *= -1
         if(this.y - this.r <= TOP && this.vy < 0 || this.y + this.r >= BUTTOM && this.vy > 0) this.vy *= -1
+
+        // 摩擦力
+        /*
+        this.vx *= 0.99
+        this.vy *= 0.99
+
+        if(Math.abs(this.vx) < 0.1) this.vx = 0
+        if(Math.abs(this.vy) < 0.1) this.vy = 0*/
 
         this.x += this.vx;
         this.y += this.vy;
