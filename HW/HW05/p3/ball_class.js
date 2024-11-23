@@ -14,7 +14,7 @@ const BUTTOM = window.innerHeight - MAX_RADIUS
 
 // 亂數生成
 function rand(min,max){
-    return Math.floor(Math.random()*max)+min;
+    return Math.floor(Math.random()*(max-min))+min;
 };
 
 //碰撞檢測
