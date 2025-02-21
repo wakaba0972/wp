@@ -1,4 +1,4 @@
-## 期中作業 - 陽春的最短路徑視覺化-BFS和DFS
+## 期中作業 - 陽春的路徑搜尋視覺化-BFS和DFS
 * ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/MID/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/MID)
 
 * ### 原創程度:

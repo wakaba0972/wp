@@ -1,5 +1,7 @@
 # denoApiService
 
+### * 因為API Key失效，所以這個不能動了!
+
 支援以下功能
 
 1. fetch 跨站網頁
