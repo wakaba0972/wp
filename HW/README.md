@@ -138,6 +138,8 @@
 ---
 ## 作業10 - 請用 groq 大語言模型 LLM 做一個簡單的網頁應用
 
+#### 因為API Key失效，所以這個不能動了!
+
 * ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW10/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW10)
 * ### 原創程度:
     * Markdown-it 的用法參考[github]((https://github.com/markdown-it/markdown-it))
@@ -174,7 +176,7 @@
 * ### 修改
     * 原本/sqlite無法回應，我發現是sqlHandler裡的`new DB('db/${db}.db')`路徑有問題，將其改為`new DB(Deno.cwd() + '/專案/denoApiService/db/${db}.db')`絕對路徑就好了
 ---
-## 期中作業 - 陽春的最短路徑視覺化-BFS和DFS
+## 期中作業 - 陽春的路徑搜尋視覺化-BFS和DFS
 * ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/MID/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/MID)
 
 * ### 原創程度:
