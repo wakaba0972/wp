@@ -138,7 +138,7 @@
 ---
 ## 作業10 - 請用 groq 大語言模型 LLM 做一個簡單的網頁應用
 
-#### 因為API Key失效，所以這個不能動了!
+#### * 因為API Key失效，所以這個不能動了!
 
 * ### 網頁:  [點此](https://wakaba0972.github.io/wp/HW/HW10/index.html), 原始碼:  [點此](https://github.com/wakaba0972/wp/tree/master/HW/HW10)
 * ### 原創程度:
